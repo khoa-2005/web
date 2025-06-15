@@ -1,25 +1,25 @@
 /* Tổng quan */
 body {
-  background: #121212;
-  color: #e0e0e0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  color: #e0e0e0;
+  background: #121212;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* Header - Banner & Navbar */
+/* Banner, video nền */
 .banner video {
   width: 100%;
   height: 600px;
   object-fit: cover;
   filter: brightness(0.5);
-  display: block;
   margin: 20px auto;
   border-radius: 20px;
   box-shadow: 0 5px 15px #ffcc5b;
 }
 
+/* Menu điều hướng */
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -30,22 +30,22 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.navbar ul li a {
+.navbar ul a {
   color: #ffcc5b;
   text-decoration: none;
-  transition: all 0.3s ease;
   padding: 10px 20px;
   border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
-.navbar ul li a:hover {
+.navbar ul a:hover {
   color: #121212;
   background: #ffcc5b;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px #ffcc5b;
 }
 
-/* Section cơ bản */
+/* Các Section */
 .section {
   padding: 40px;
   max-width: 1000px;
@@ -58,7 +58,6 @@ body {
   color: #ffcc5b;
   font-size: 24px;
   position: relative;
-  line-height: 1.5;
 }
 
 .section h2::after {
@@ -71,6 +70,7 @@ body {
   left: 0;
 }
 
+/* List, ảnh đại diện, liên hệ */
 .section ul {
   list-style: none;
   padding: 0;
@@ -78,14 +78,11 @@ body {
 
 .section ul li {
   margin-bottom: 10px;
-  font-size: 18px;
   padding: 10px;
   background: #1a1a1a;
   border-radius: 10px;
-  color: #e0e0e0;
 }
 
-/* about */
 .about-content {
   display: flex;
   align-items: center;
@@ -93,15 +90,13 @@ body {
 }
 
 .about-content .avatar {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  transition: transform 0.3s ease;
   box-shadow: 0 5px 15px #ffcc5b;
 }
 
-/* Footer */
 .contact ul a {
   color: #ffcc5b;
   text-decoration: none;
@@ -112,18 +107,18 @@ body {
   color: #ffffff;
 }
 
-footer {
+footer p {
   text-align: center;
   padding: 20px;
-  background: #1a1a1a;
   color: #ffcc5b;
+  background: #1a1a1a;
+  margin: 0;
 }
 
-/* Giảm khoảng cách dòng */
+/* Các tiện ích khác */
 p {
   line-height: 2;
 }
-
 .section ul li {
   line-height: 1.9;
 }
