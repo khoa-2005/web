@@ -1,49 +1,48 @@
-/* Reset cơ bản */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
 /* Tổng quan */
 body {
   background: #121212;
   color: #e0e0e0;
-  line-height: 1.6;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
-/* Banner & Navbar */
+/* Header - Banner & Navbar */
 .banner video {
   width: 100%;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
   filter: brightness(0.5);
-}
-
-.banner img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  filter: brightness(0.5);
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #ffcc5b;
 }
 
 .navbar ul {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background: #000;
+  background: #1a1a1a;
   padding: 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
 }
 
 .navbar ul li a {
-  color: #e0e0e0;
+  color: #ffcc5b;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 .navbar ul li a:hover {
-  color: #ffcc5b;
+  color: #121212;
+  background: #ffcc5b;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px #ffcc5b;
 }
 
 /* Section cơ bản */
@@ -51,7 +50,7 @@ body {
   padding: 40px;
   max-width: 1000px;
   margin: 0 auto;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffcc5b;
 }
 
 .section h2 {
@@ -59,6 +58,7 @@ body {
   color: #ffcc5b;
   font-size: 24px;
   position: relative;
+  line-height: 1.5;
 }
 
 .section h2::after {
@@ -79,6 +79,10 @@ body {
 .section ul li {
   margin-bottom: 10px;
   font-size: 18px;
+  padding: 10px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  color: #e0e0e0;
 }
 
 /* about */
@@ -89,19 +93,40 @@ body {
 }
 
 .about-content .avatar {
-  width: 150px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   border-radius: 50%;
   transition: transform 0.3s ease;
-}
-
-.about-content .avatar:hover {
-  transform: scale(1.05);
+  box-shadow: 0 5px 15px #ffcc5b;
 }
 
 /* Footer */
+.contact ul a {
+  color: #ffcc5b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact ul a:hover {
+  color: #ffffff;
+}
+
 footer {
   text-align: center;
   padding: 20px;
-  background: #000;
+  background: #1a1a1a;
   color: #ffcc5b;
+}
+
+/* Giảm khoảng cách dòng */
+p {
+  line-height: 2;
+}
+
+.section ul li {
+  line-height: 1.9;
+}
+.mr-2 {
+  margin-right: 20px;
 }
